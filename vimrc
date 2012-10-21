@@ -28,8 +28,11 @@ nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
+highlight SpellBad term=underline gui=undercurl guisp=Orange
+colorscheme koehler
+
 if has("gui_running")
-    colorscheme inkpot
+    colorscheme koehler
     highlight SpellBad term=underline gui=undercurl guisp=Orange
 endif
 
