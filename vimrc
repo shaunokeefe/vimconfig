@@ -111,3 +111,6 @@ endfunc
 
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+" Switch easymotion key sequence back to the shorter version
+let g:EasyMotion_leader_key = '<Leader>'
