@@ -57,6 +57,8 @@ if has("gui_running")
 endif
 
 map <F2> ;NERDTreeToggle<CR>
+map <F3> ;NumbersToggle<CR>
+map <F4> ;NumbersOnOff<CR>
 nmap <F8> ;TagbarToggle<CR>
 
 " increase the number of commands remembered by vim
