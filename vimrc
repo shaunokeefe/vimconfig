@@ -1,4 +1,8 @@
 " Pathogen
+
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = []
+
 filetype off
 call pathogen#infect()
 filetype plugin indent on
