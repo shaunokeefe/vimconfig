@@ -123,3 +123,8 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 let g:EasyMotion_leader_key = '<Leader>'
 
 let g:syntastic_python_checkers=['flake8']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=5
