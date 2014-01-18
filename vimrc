@@ -53,7 +53,11 @@ vnoremap ; :
 vnoremap : ;
 
 "highlight SpellBad term=underline gui=undercurl guisp=Orange
-colorscheme koehler
+set background=dark
+"let g:solarized_termcolors = 256
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
+colorscheme solarized
 
 if has("gui_running")
     "colorscheme koehler
