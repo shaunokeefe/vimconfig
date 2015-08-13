@@ -1,0 +1,7 @@
+source ~/.vim/vimrc
+
+" Should I just use noremap here?
+nnoremap ; :
+nnoremap : ; 
+vnoremap ; :
+vnoremap : ;

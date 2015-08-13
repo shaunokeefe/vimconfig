@@ -46,11 +46,6 @@ set expandtab
 set sts=4
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
-" Should I just use noremap here?
-nnoremap ; :
-nnoremap : ; 
-vnoremap ; :
-vnoremap : ;
 
 "highlight SpellBad term=underline gui=undercurl guisp=Orange
 set background=dark
@@ -132,3 +127,8 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height=5
+
+
+" NerdTree
+let NERDTreeIgnore = ['\.pyc$']
+
