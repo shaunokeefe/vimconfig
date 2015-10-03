@@ -132,4 +132,4 @@ let g:syntastic_ruby_checkers=['mri', 'rubocop']
 
 " NerdTree
 let NERDTreeIgnore = ['\.pyc$']
-
+let NERDTreeShowHidden=1
