@@ -48,6 +48,10 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set sts=4
+
+" highlight whitespace
+set list  
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
 
