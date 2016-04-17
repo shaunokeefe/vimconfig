@@ -27,6 +27,9 @@ set incsearch
 
 set hlsearch
 
+"clear search results
+nmap <silent> ,/ :nohlsearch<CR>
+
 " Background buffers without saving
 set hidden
 
