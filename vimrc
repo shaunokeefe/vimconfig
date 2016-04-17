@@ -61,14 +61,9 @@ autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,
 "highlight SpellBad term=underline gui=undercurl guisp=Orange
 set background=dark
 "let g:solarized_termcolors = 256
-"let g:solarized_visibility = "high"
-"let g:solarized_contrast = "high"
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
 colorscheme solarized
-
-if has("gui_running")
-    "colorscheme koehler
-    "highlight SpellBad term=underline gui=undercurl guisp=Orange
-endif
 
 " increase the number of commands remembered by vim
 set history=1000
@@ -136,7 +131,10 @@ let g:syntastic_python_checkers=['flake8']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_auto_loc_list=1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height=5
 let g:syntastic_ruby_checkers=['mri', 'rubocop']
 let g:syntastic_css_checkers = ['prettycss']
@@ -170,3 +168,8 @@ function! NERDTreeQuit()
   endif
 endfunction
 autocmd WinEnter * call NERDTreeQuit()
+" powerline
+set laststatus=2
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
