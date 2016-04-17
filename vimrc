@@ -95,6 +95,10 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" dont skip over wrapped lines
+nnoremap j gj
+nnoremap k gk
+
 " switch CWD to directory of current buffer
 map <leader>cd :cd%:p:h<cr>:pwd<cr>
 
