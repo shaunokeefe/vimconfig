@@ -121,6 +121,7 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 " Switch easymotion key sequence back to the shorter version
 let g:EasyMotion_leader_key = '<Leader>'
 
+" Syntastic
 let g:syntastic_python_checkers=['flake8']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -128,6 +129,8 @@ set statusline+=%*
 let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height=5
 let g:syntastic_ruby_checkers=['mri', 'rubocop']
+let g:syntastic_css_checkers = ['prettycss']
+let g:syntastic_coffee_checkers = ['coffeelint']
 
 
 " NerdTree
