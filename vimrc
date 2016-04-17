@@ -1,5 +1,7 @@
-" Pathogen
+" Disable vi compatability
+set nocompatible
 
+" Pathogen
 " To disable a plugin, add it's bundle name to the following list
 let g:pathogen_disabled = []
 
@@ -13,18 +15,14 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-"filetype plugin on
-set ofu=syntaxcomplete#Complete
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" Disable vi compatability
-set nocompatible
+set ofu=syntaxcomplete#Complete
 
 " Jump straight to search results
 set incsearch
-
 set hlsearch
 
 "clear search results
@@ -39,7 +37,7 @@ set ignorecase
 set smartcase
 set autoindent
 
-" ?
+" set the terminals title
 set title
 
 set nu
@@ -71,7 +69,7 @@ set history=1000
 " extend the types of pair matching vim does
 runtime macros/matchit.vim
 
-" Increas screen context around cursor
+" Increase screen context around cursor
 set scrolloff=7
 
 
@@ -122,6 +120,7 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
+" Easymotion
 " Switch easymotion key sequence back to the shorter version
 let g:EasyMotion_leader_key = '<Leader>'
 
