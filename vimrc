@@ -15,6 +15,9 @@ nmap <leader>w :w!<cr>
 
 "filetype plugin on
 set ofu=syntaxcomplete#Complete
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Disable vi compatability
 set nocompatible
