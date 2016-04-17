@@ -59,12 +59,6 @@ if has("gui_running")
     "highlight SpellBad term=underline gui=undercurl guisp=Orange
 endif
 
-map <F2> ;NERDTreeToggle<CR>
-map <F3> ;NumbersToggle<CR>
-map <F4> ;NumbersOnOff<CR>
-set pastetoggle=<F5>
-nmap <F8> ;TagbarToggle<CR>
-
 " increase the number of commands remembered by vim
 set history=1000
 
