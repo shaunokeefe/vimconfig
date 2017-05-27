@@ -12,7 +12,7 @@
 	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
+	url = git://github.com/easymotion/vim-easymotion.git
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
