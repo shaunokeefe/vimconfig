@@ -81,6 +81,7 @@ set wildmenu
 " read in files that are changed from the outside
 set autoread
 
+" ?
 set backspace=eol,start,indent
 
 " show matching brackets when cursor is over them
@@ -172,10 +173,11 @@ endfunction
 autocmd WinEnter * call NERDTreeQuit()
 
 " powerline
-set laststatus=2
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+" set laststatus=2
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
+let g:airline_powerline_fonts = 1
 
 " terraform
 let g:terraform_fmt_on_save=1

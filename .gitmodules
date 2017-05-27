@@ -34,3 +34,6 @@
 [submodule "bundle/terraform"]
 	path = bundle/terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/vim-airline/vim-airline.git
