@@ -125,7 +125,8 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
 " Easymotion
 " Switch easymotion key sequence back to the shorter version
-let g:EasyMotion_leader_key = '<Leader>'
+" let g:EasyMotion_leader_key = '<Leader>'
+map <Leader> <Plug>(easymotion-prefix)
 
 " Syntastic
 let g:syntastic_python_checkers=['flake8']
