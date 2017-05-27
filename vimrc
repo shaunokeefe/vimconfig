@@ -139,6 +139,8 @@ let g:syntastic_loc_list_height=5
 let g:syntastic_ruby_checkers=['mri', 'rubocop']
 let g:syntastic_css_checkers = ['prettycss']
 let g:syntastic_coffee_checkers = ['coffeelint']
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_js_checkers = ['eslint']
 
 
 " NerdTree
