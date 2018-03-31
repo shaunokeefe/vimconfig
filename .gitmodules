@@ -37,3 +37,24 @@
 [submodule "bundle/airline"]
 	path = bundle/airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/easyoperator-line"]
+	path = bundle/easyoperator-line
+	url = https://github.com/haya14busa/vim-easyoperator-line
+[submodule "bundle/speeddating"]
+	path = bundle/speeddating
+	url = https://github.com/tpope/vim-speeddating
+[submodule "bundle/commentary"]
+	path = bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "bundle/sneak"]
+	path = bundle/sneak
+	url = https://github.com/justinmk/vim-sneak.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "/Users/shaunokeefe/.vim/bundle/vim-javascript"]
+	path = /Users/shaunokeefe/.vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = https://github.com/posva/vim-vue.git

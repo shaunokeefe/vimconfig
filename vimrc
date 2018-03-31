@@ -143,6 +143,7 @@ let g:syntastic_css_checkers = ['prettycss']
 let g:syntastic_coffee_checkers = ['coffeelint']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_js_checkers = ['eslint']
+let g:vue_disable_pre_processors=1
 
 
 " NerdTree
