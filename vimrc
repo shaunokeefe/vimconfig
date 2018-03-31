@@ -3,11 +3,29 @@ set nocompatible
 
 " Pathogen
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = []
+"let g:pathogen_disabled = []
+"filetype off
+"call pathogen#infect()
+"filetype plugin indent on
 
-filetype off
-call pathogen#infect()
-filetype plugin indent on
+call plug#begin('~/.vim/plugged')
+Plug 'Valloric/YouCompleteMe'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-commentary'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'myusuf3/numbers.vim'
+Plug 'justinmk/vim-sneak'
+Plug 'vim-syntastic/syntastic'
+"tagbar
+Plug 'hashivim/vim-terraform'
+Plug 'kchmck/vim-coffee-script'
+Plug 'altercation/vim-colors-solarized'
+Plug 'pangloss/vim-javascript'
+Plug 'posva/vim-vue'
+call plug#end()
+
 
 let mapleader = ","
 let g:mapleader = ","
