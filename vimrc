@@ -22,17 +22,18 @@ set pastetoggle=<F5>
 nnoremap <F8> ;TagbarToggle<CR>
 
 
+
 call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'myusuf3/numbers.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'vim-syntastic/syntastic'
-"tagbar
 Plug 'hashivim/vim-terraform'
 Plug 'kchmck/vim-coffee-script'
 Plug 'altercation/vim-colors-solarized'
