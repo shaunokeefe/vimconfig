@@ -7,6 +7,9 @@ set nocompatible
 "filetype off
 "call pathogen#infect()
 "filetype plugin indent on
+let mapleader = ","
+let g:mapleader = ","
+
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
@@ -38,15 +41,13 @@ Plug 'posva/vim-vue'
 call plug#end()
 
 
-let mapleader = ","
-let g:mapleader = ","
 
 " Fast saving
-nmap <leader>w :w!<cr>
+nnoremap <leader>w :w!<CR>
 
 " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+nnoremap <silent> <Leader>ev :e ~/.vimrc<CR>
+nnoremap <silent> <leader>sv :so ~/.vimrc<CR>
 
 set ofu=syntaxcomplete#Complete
 
@@ -55,7 +56,7 @@ set incsearch
 set hlsearch
 
 "clear search results
-nmap <silent> ,/ :nohlsearch<CR>
+nnoremap <leader>/ :nohlsearch<cr>
 
 " Background buffers without saving
 set hidden
@@ -120,17 +121,17 @@ set backspace=eol,start,indent
  set noswapfile
 
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+noremap <C-j> <C-W>j
+noremap <C-k> <C-W>k
+noremap <C-h> <C-W>h
+noremap <C-l> <C-W>l
 
 " dont skip over wrapped lines
 nnoremap j gj
 nnoremap k gk
 
 " switch CWD to directory of current buffer
-map <leader>cd :cd%:p:h<cr>:pwd<cr>
+noremap <leader>cd :cd%:p:h<cr>:pwd<cr>
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -155,10 +156,10 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 " Easymotion
 " Switch easymotion key sequence back to the shorter version
 " let g:EasyMotion_leader_key = '<Leader>'
-map <Leader> <Plug>(easymotion-prefix)
-" nmap s <Plug>(easymotion-s2)
-" nmap t <Plug>(easymotion-t2)
-let g:EasyMotion_smartcase = 1
+" map <Leader> <Plug>(easymotion-prefix)
+" nnoremap s <Plug>(easymotion-s2)
+" nnoremap t <Plug>(easymotion-t2)
+" let g:EasyMotion_smartcase = 1
 
 " Syntastic
 let g:syntastic_python_checkers=['flake8']
