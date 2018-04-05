@@ -7,6 +7,17 @@ set nocompatible
 "filetype off
 "call pathogen#infect()
 "filetype plugin indent on
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
+noremap <F2> ;NERDTreeToggle<CR>
+noremap <F3> ;NumbersToggle<CR>
+noremap <F4> ;NumbersOnOff<CR>
+set pastetoggle=<F5>
+nnoremap <F8> ;TagbarToggle<CR>
+
 
 call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe'
