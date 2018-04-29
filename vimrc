@@ -103,7 +103,7 @@ set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=4 tabstop=4
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
 
