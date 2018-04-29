@@ -298,3 +298,7 @@ nmap <leader>bp :CtrlP<cr>
 nmap <leader>bb :CtrlPBuffer<cr>
 nmap <leader>bm :CtrlPMixed<cr>
 nmap <leader>bs :CtrlPMRU<cr>
+
+:inoremap jk <Esc>
+set noswapfile
+set backupcopy=yes
