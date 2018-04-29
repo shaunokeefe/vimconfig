@@ -57,9 +57,10 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
-
-
 
 " Fast saving
 nnoremap <leader>w :w!<CR>
@@ -238,3 +239,41 @@ let g:terraform_fmt_on_save=1
 let g:terraform_align=1
 let g:terraform_fold_sections=1
 let g:terraform_remap_spacebar=1
+
+
+" ctrlp config and searching
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+end
+
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" bind \ (backward slash) to grep shortcut
+command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+nnoremap \ :Ag<SPACE>
+"
+" Setup some default ignores
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+\}
+
+" Use the nearest .git directory as the cwd
+" This makes a lot of sense if you are working on a project that is in version
+" control. It also supports works with .svn, .hg, .bzr.
+let g:ctrlp_working_path_mode = 'r'
+
+" Use a leader instead of the actual named binding
+nmap <leader>p :CtrlP<cr>
+
+" Easy bindings for its various modes
+nmap <leader>bp :CtrlP<cr>
+nmap <leader>bb :CtrlPBuffer<cr>
+nmap <leader>bm :CtrlPMixed<cr>
+nmap <leader>bs :CtrlPMRU<cr>
