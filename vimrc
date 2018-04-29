@@ -23,6 +23,23 @@ nnoremap <F8> ;TagbarToggle<CR>
 
 
 
+let mapleader = "<space>"
+let g:mapleader = ","
+let maplocalleader = ","
+
+
+" Should I just use noremap here?
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
+map <F2> ;NERDTreeToggle<CR>
+map <F3> ;NumbersToggle<CR>
+map <F4> ;NumbersOnOff<CR>
+set pastetoggle=<F5>
+nmap <F8> ;TagbarToggle<CR>
+
 call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
