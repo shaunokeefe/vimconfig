@@ -41,7 +41,8 @@ set pastetoggle=<F5>
 nmap <F8> ;TagbarToggle<CR>
 
 call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe'
+
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
